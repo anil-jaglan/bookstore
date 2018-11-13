@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.bookstore</groupId>
+	<artifactId>book-store</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>book-store-manager</name>
+	<description>Bookstore to search and books online</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.6.RELEASE</version>
+	</parent>
+
+	<modules>
+		<module>book-store-api</module>
+		<module>book-store-common</module>
+		<module>book-store-service</module>
+		<module>book-store-deploy</module>
+	</modules>
+
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<bookstore.version>0.0.1-SNAPSHOT</bookstore.version>
+		<log4j.version>1.7.5</log4j.version>
+		<logback.version>1.2.3</logback.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- Intra module dependencies -->
+			<dependency>
+				<groupId>com.bookstore</groupId>
+				<artifactId>book-store-api</artifactId>
+				<version>${bookstore.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.bookstore</groupId>
+				<artifactId>book-store-common</artifactId>
+				<version>${bookstore.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.bookstore</groupId>
+				<artifactId>book-store-service</artifactId>
+				<version>${bookstore.version}</version>
+			</dependency>
+			<!-- External dependencies -->
+			<dependency>
+				<groupId>org.slf4j</groupId>
+				<artifactId>slf4j-api</artifactId>
+				<version>${log4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-classic</artifactId>
+				<version>${logback.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.vladmihalcea</groupId>
+				<artifactId>hibernate-types-52</artifactId>
+				<version>5.1.0.Final</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>5.1.0.Final</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>org.codehaus.jackson</groupId>
+				<artifactId>jackson-mapper-asl</artifactId>
+				<version>1.9.4</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+</project>

@@ -1,0 +1,57 @@
+Request 1:
+{
+	"isbn" : "ISBN543212345",
+	"title": "Harry Potter",
+	"author": "J K. Rowling",
+	"price": 23.5,
+	"totalCopies": 200,
+	"genre": "Fantasy",
+	"publishDate": "2005-01-01",
+	"desc": "Harry Potter is a series of fantasy novels written by British author J. K. Rowling. The novels chronicle the lives of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley"
+}
+
+Request 2:
+{
+	"isbn" : "ISBN364562787",
+	"title": "XML Developer's Guide",
+	"author": "Garghentini, Davide",
+	"price": 44.95,
+	"totalCopies": 10,
+	"genre": "Computer",
+	"publishDate": "2000-10-01",
+	"desc": "An in-depth look at creating applications with XML."
+}
+
+Request 3:
+{
+	"isbn" : "ISBN764563467",
+	"title": "Midnight Rain",
+	"author": "Garcia, Debra",
+	"price": 5.95,
+	"totalCopies": 25,
+	"genre": "Fantasy",
+	"publishDate": "2000-12-16",
+	"desc": "A former architect battles corporate zombies, an evil sorceress, and her own childhood to become queen of the world."
+}
+Request 4:
+{
+	"isbn" : "ISBN764562671",
+	"title": "Splish Splash",
+	"author": "Thurman, Paula",
+	"price": 4.95,
+	"totalCopies": 50,
+	"genre": "Romance",
+	"publishDate": "2000-11-02",
+	"desc": "A deep sea diver finds true love twenty thousand leagues beneath the sea."
+}
+Request 5:
+{
+	"isbn" : "ISBN019283",
+	"title": "Creepy Crawlies",
+	"author": "Knorr, Stefan",
+	"price": 4.99,
+	"totalCopies": 30,
+	"genre": "Horror",
+	"publishDate": "2000-12-06",
+	"desc": "An anthology of horror stories about roaches, centipedes, scorpions  and other insects"
+}
